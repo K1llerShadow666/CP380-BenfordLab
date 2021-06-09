@@ -16,8 +16,8 @@ namespace BenfordLab
          *   654321 ==> returns 6
          */
         public static int getFirstDigit(int digit) {
-            // TODO
-            return 0;
+            digit = (int)(Value.ToString()[0]) - 48;
+            return digit;
         }    
     }
 }

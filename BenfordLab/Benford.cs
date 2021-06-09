@@ -27,7 +27,11 @@ namespace BenfordLab
                     Country = data.Groups[1].Value,
                     Population = int.Parse(data.Groups[2].Value)
                 });
-
+                .Select(data => new
+                {
+                    Country = data.Groups[1].Value,
+                    FirstDigit.getFirstDigit())
+                });
             // manipulate the data!
             //
             // Select() with:
